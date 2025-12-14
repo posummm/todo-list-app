@@ -16,7 +16,7 @@ app.use(express.json());
 // Test koneksi database
 testConnection();
 
-// ==================== ROUTES ====================
+// ROUTES
 
 // 1. GET /tasks - Get semua tasks
 app.get('/api/tasks', async (req, res) => {
@@ -230,9 +230,9 @@ app.get('/api/db-status', async (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-    console.log(`📡 API endpoints:`);
-    console.log(`   GET  http://localhost:${PORT}/api/tasks`);
-    console.log(`   POST http://localhost:${PORT}/api/tasks`);
-    console.log(`   GET  http://localhost:${PORT}/api/test`);
+    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`API endpoints:`);
+    console.log(`GET  http://localhost:${PORT}/api/tasks`);
+    console.log(`POST http://localhost:${PORT}/api/tasks`);
+    console.log(`GET  http://localhost:${PORT}/api/test`);
 });

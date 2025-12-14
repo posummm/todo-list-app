@@ -279,8 +279,6 @@ function App() {
                     Selesai: {taskStats.completed}
                 </p>
                 <p className="footer-info">
-                    Filter aktif: {filter === 'all' ? 'Semua' : filter} •
-                    Ditampilkan: {displayTasks.length} tugas •
                     Terakhir diperbarui: {new Date().toLocaleTimeString()}
                 </p>
             </footer>

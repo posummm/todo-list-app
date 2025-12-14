@@ -20,17 +20,17 @@ const promisePool = pool.promise();
 async function testConnection() {
     try {
         const connection = await promisePool.getConnection();
-        console.log('✅ Database connected successfully');
-        console.log(`📊 Database: ${process.env.DB_NAME}`);
+        console.log('Database connected successfully');
+        console.log(`Database: ${process.env.DB_NAME}`);
 
         // Test query untuk memastikan tabel ada
         const [rows] = await promisePool.query('SELECT COUNT(*) as total FROM tasks');
-        console.log(`📋 Total tasks in database: ${rows[0].total}`);
+        console.log(`Total tasks in database: ${rows[0].total}`);
 
         connection.release();
         return true;
     } catch (error) {
-        console.error('❌ Database connection failed:', error.message);
+        console.error('Database connection failed:', error.message);
         console.log('Please check:');
         console.log('1. Is MySQL running?');
         console.log('2. Is the database name correct? (ujian_pweb)');
