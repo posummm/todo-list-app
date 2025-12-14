@@ -1,4 +1,4 @@
-# Todo List Application
+# Ujian Praktikum PWEB
 
 Aplikasi Todo List dengan fitur CRUD lengkap menggunakan React.js, Node.js, dan MySQL.
 
@@ -36,19 +36,19 @@ Aplikasi Todo List dengan fitur CRUD lengkap menggunakan React.js, Node.js, dan 
 
 ## Struktur Project
 todo/
-├── frontend/                 # React Application
-│   ├── src/
-│   │   ├── App.js           # Main component
-│   │   ├── App.css          # All styles
-│   │   └── index.js         # Entry point
-│   ├── public/
-│   └── package.json
+├── frontend/ # React Application
+│ ├── src/
+│ │ ├── App.js # Main component
+│ │ ├── App.css # All styles
+│ │ └── index.js # Entry point
+│ ├── public/
+│ └── package.json
 │
-└── backend/                  # Node.js API Server
-    ├── server.js            # Express server
-    ├── db.js               # Database connection
-    ├── .env                # Environment variables
-    └── package.json
+└── backend/ # Node.js API Server
+├── server.js # Express server
+├── db.js # Database connection
+├── .env # Environment variables
+└── package.json    
 
 ## Cara Menjalankan
 
