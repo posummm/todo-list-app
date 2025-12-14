@@ -88,7 +88,7 @@ function App() {
 
     // Delete task
     const handleDeleteTask = async (id) => {
-        if (!window.confirm('Are you sure you want to delete this task?')) return;
+        if (!window.confirm('Apakah kamu yakin ingin menghapus tugas ini?')) return;
 
         try {
             await axios.delete(`${API_URL}/tasks/${id}`);
